@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            table,th,td {
+                border:1px solid black;
+                border-collapse:collapse;
+                padding: 8px;
+            }
+        </style>
+    </head>
+   <body>
+     <table style="width:100%">
+        <tr>
+            <th rowspan="2">Topic</th>
+            <th colspan="2">Description</th>
+        </tr>
+        <tr>
+            <th>Definition</th>
+            <th>Example/Note</th>
+        </tr>
+        <tr>
+            <td>Table in HTML</td>
+            <td>Used to display data in rows and columns</td>
+            <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+        </tr>
+        <tr>
+            <td>Form in HTML</td>
+            <td>Collects user input and sumbits it to a server</td>
+            <td>&lt;form&gt;&lt;input&gt;&lt;/form&gt;</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Div Tag</td>
+            <td rowspan="2">A block level container for grouping elements</td>
+            <td>&lt;div&gt;Content&lt;/div&gt;</td>
+        </tr>
+        <tr>
+           <td>Often used with class or id for styling or scripting.</td>
+        </tr>
+        <tr>
+            <td>Id and Class attribute</td>
+            <td>Used to uniquely identify or group HTML elements for styling or scripting.</td>
+            <td>&lt;div id="main" class="container"&gt;&lt;/div&gt;</td>
+        </tr>
+        <tr>
+            <td>Style tag</td>
+            <td>Defines internal CSS styles within an HTML document</td>
+            <td>&lt;style&gt;h1 {color: red;}&lt;/style&gt;</td>
+        </tr>
+        <tr>
+            <td>Video & Audio tag</td>
+            <td>Embeds video and audio files in a web page.</td>
+            <td>&lt;video src="movie.mp4" controls&gt;&lt;/video&gt;<br>&lt;audio src="song.mp3" controls&gt;&lt;/audio&gt;</td>
+        </tr>
+        <tr>
+            <td>What is meta tag</td>
+            <td>Provides metadata about the HTML document(e.g.,charset,author,viewport)</td>
+            <td>&lt;meta charset="UTF-8"&gt;</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Semantic and non-semantic elements</td>
+            <td>Semantic: Clearly decribes its meaning(e.g.,&lt;header&gt;,&lt;footer&gt;)</td>
+            <td rowspan="2">
+                Semantic:&lt;nav&gt;,&lt;main&gt;,&lt;article&gt;<br>
+                Non-semantic:&lt;div&gt;,&lt;span&gt;
+            </td>
+        </tr>
+        <tr>
+            <td>Non-semantic: Does not describe its meaning(e.g.,&lt;div&gt;,&lt;span&gt;)</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Inline and Block elements</td>
+            <td>Block: Starts on a new line,takes full width(e.g.,&lt;div&gt;,&lt;p&gt;)</td>
+            <td rowspan="2">
+                Block: &lt;h1&gt;,&lt;div&gt;,&lt;p&gt;<br>
+                Inline: &lt;span&gt;,&lt;a&gt;,&lt;img&gt;
+            </td>
+        </tr>
+        <tr>
+            <td>Inline:Does not start on a new line,only takes up as much width as necessary(e.g.,&lt;span&gt;,&lt;a&gt;)</td>
+        </tr>
+     </table>
+   </body>
+</html>

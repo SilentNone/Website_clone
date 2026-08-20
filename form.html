@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal Registration Form</title>
+</head>
+<body>
+    <h2>Job Portal Registration Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">Full Name:</label> 
+            <input type="text" id="fname" name="fname" placeholder="Enter your full name" required><br><br>
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+            <label for="pass">Password:</label> 
+            <input type="password" id="pass" name="pass" placeholder="Minimum 8 characters" required><br><br>
+            <label for="mob">Mobile:</label> 
+            <input type="tel" id="mob" name="mob" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="9876543210" required><br><br>
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" id="dob" name="dob"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </fieldset><br>
+        <fieldset>
+            <legend>Education & Address</legend>
+            <label for="qualification">Qualification:</label>
+            <select id="qualification" name="qualification" placeholer="Select Qualification" required>
+                <option>Select Qualification</option>
+                <option value="bca">BCA</option>
+                <option value="bsc">Bsc</option>
+                <option value="btech">Btech</option>
+                <option value="mca">MCA</option>
+            </select><br><br>
+            <label for="clg">College:</label>
+            <input type="text" id="clg" placeholder="Enter your college name" required><br><br>
+            <label for="year">Passing Year:</label>
+            <input type="number" id="year" min="2020" max="2026" placeholder="2020" required>
+            <br><br>
+            <label for="city">City:</label>
+            <input list="city" placeholder="Select or Type your city" required>
+            <datalist id="city">
+            <option value="kozhikkode"></option>
+            <option value="Kochi"></option>
+            <option value="Kannur"></option>
+            <option value="Thrissur"></option>
+            </datalist>
+            <br><br>
+            <label for="state">State:</label>
+            <select id="work" name="work" placeholer="Select Work Mode" required>
+                <option>Select State</option>
+                <option value="kerala">Kerala</option>
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="karnataka">Karnataka</option>
+            </select>
+            <label for="pin">Pincode</label>
+            <input type="text" id="pin" name="pin" placeholder="673001" required>
+
+            
+        </fieldset><br>
+        <fieldset>
+            <legend >Job Preferences</legend>
+            <label for="skills">Skills:</label>
+            <input type="checkbox" id="s1" name="skills" value="HTML">
+            <label for="s1">HTML</label>
+            <input type="checkbox" id="s2" name="skills" value="CSS">
+            <label for="s2">CSS</label>
+            <input type="checkbox" id="s3" name="skills" value=JavaScript">
+            <label for="s3">JavaScript</label>
+            <input type="checkbox" id="s4" name="skills" value="Java">
+            <label for="s4">Java</label>
+            <input type="checkbox" id="s5" name="skills" value="SQL">
+            <label for="s5">SQL</label><br><br>
+            <label for="role">Preferred Role:</label>
+            <select id="role" name="role" placeholer="Select Preferred Role" required>
+                <option>Select Preferred Role</option>
+                <option value="frontend developer">Frontend Developer</option>
+                <option value="backend developer">Backend Developer</option>
+                <option value="fullstack developer">Fullstack Developer</option>
+                <option value="java developer">Java Developer</option>
+            </select><br><br>
+            <label for="emp">Employment:</label>
+            <input type="radio" id="intern" name="emp" value="Internship">
+            <label for="intern">Internship</label>
+            <input type="radio" id="fulltime" name="emp" value="Fulltime">
+            <label for="fulltime">Full-Time</label><br><br>
+            <label for="work">Work Mode:</label>
+            <select id="work" name="work" placeholer="Select Work Mode" required>
+                <option>Select Work Mode</option>
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="onsite">On-Site</option>
+            </select>
+            <label for="join">Joining Month:</label> 
+            <input type="text" id="join" name="join">
+            <label for="int">Interview Time:</label> 
+            <input type="time" id="int" name="int">
+        </fieldset><br>
+        <fieldset>
+            <legend>Document & Profile</legend>
+            <label for="photo">Profile Photo:</label>
+            <input type="file" id="photo" name="photo"><br><br>
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume"><br><br>
+            <label for="linkedin">LinkedIn:</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/you" required><br><br>
+            <label for="git">GitHub:</label>
+            <input type="url" id="git" name="git" placeholder="https://github.com/youruse" required><br><br>
+            <label for="tarea">Professional Summary:</label><br>
+            <textarea id="tarea" name="summary" rows="6" cols="30" placeholder="write a short summary about yourself,your skills,education, and career goals"></textarea><br><br>
+            <label>
+                <input type="checkbox" name="agree" value="yes" required>
+                I confirm that the above information is correct
+            </label><br><br>
+            <input type="button" value="Register">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

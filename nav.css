@@ -1,0 +1,87 @@
+body {
+   margin:0;
+   padding:0;
+   background-color: #333333;
+   color:white;
+   text-align: center;
+}
+
+.bottom ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display:flex;
+  overflow: scroll;
+}
+
+.bottom ul li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 10px 17px;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.bottom ul li a:hover {
+  background-color: #111111;
+}
+
+
+
+.topl ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display:flex;
+}
+.topl ul li a:hover {
+  background-color:#04aa6d;;
+  color:white;
+}
+.topl ul li a {
+  display:inline-block;
+  color:black;
+  text-decoration: none;
+  padding:10px;
+}
+.top {
+  display:flex;
+  justify-content: space-between;
+  padding:10px 12px;
+  background-color: white;
+}
+.topr ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display:flex;
+}
+.topr ul li a:hover {
+  background-color:#f1f1f1;
+  border-radius:50px;
+}
+.topr ul li a {
+  display:inline-block;
+  text-decoration: none;
+  padding:14px 14px;
+  color:black;
+}
+img {
+  width:80px;
+}
+input[type="search"] {
+  width:150px;
+  padding:10px;
+  border:2px solid;
+  border-radius:20px;
+}
+input[type="search"]:focus
+{
+  border-color: #04aa6d;
+  border:none;
+}
